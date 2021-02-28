@@ -30,11 +30,7 @@ func (r *Rule) DisActivate() {
 }
 
 func (r *Rule) RuleState() bool {
-	if r.IsActive == true {
-		return true
-	} else {
-		return false
-	}
+	return r.IsActive
 
 }
 func (r *Rule) RuleInFacts(facts []string) bool {
